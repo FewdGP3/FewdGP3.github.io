@@ -10,6 +10,11 @@
     display: none;
 }
 
+.loginbt {
+    border:rgb(255, 255, 255) ;
+    border: 10px
+}
+
 .login {
     width: 80%;
     height: 90%;
