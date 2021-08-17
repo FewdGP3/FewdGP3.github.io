@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,313 +11,327 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
         });
-        calendar.render();
-      });
-
     </script>
     <title>TO DO LIST</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-  <main>
-    <!-----login page----->
+    <main>
+        <!-----login page----->
 
-    <div class="loginbg">
-      <div class="login">
-        <div>
-          <div class="login-img">
-              <img src="https://raw.githubusercontent.com/FewdGP3/FewdGP3.github.io/main/src/css/img/clipart2603183.png">
+        <div class="loginbg">
+            <div class="login">
+                <div>
+                    <div class="login-img">
+                        <img src="https://raw.githubusercontent.com/FewdGP3/FewdGP3.github.io/main/src/css/img/clipart2603183.png">
+                    </div>
+                </div>
+                <div class="login-username">
+                    <div class="login-name">
+                        <section class="name">
+                            <label for="username">Username</label>
+                            <br>
+                            <input type="text" name="username" id="username">
+                    </div>
+                    <div class="login-password">
+                        <label for="user-pw">Password</label>
+                        <br>
+                        <input id="user-pw" type="password" name="user-pw">
+                        </section>
+                    </div>
+                    <div class="forgot">
+                        <a href="">Forgot password?</a>
+                    </div>
+                    <div class="loginbt">
+                        <input type="submit" value="LOGIN">
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-          </div>
-          <div class="login-username">
-              <div class="login-name">
-                  <section class="name">
-                      <label for="username">Username</label>
-                      <br>
-                      <input type="text" name="username" id="username">
-              </div>
-              <div class="login-password">
-                  <label for="user-pw">Password</label>
-                  <br>
-                  <input id="user-pw" type="password" name="user-pw">
-                  </section>
-              </div>
-              <div class="forgot">
-                  <a href="">Forgot password?</a>
-              </div>
-              <div class="loginbt">
-                  <input type="submit" value="LOGIN">
-              </div>
-  
-  
-          </div>
-      </div>
-  </div>
-  <!-----login page----->
+        <!-----login page----->
 
-  <!-----home page-----> 
-  <div id=home-page>
+        <!-----home page----->
+        <div id=home-page class=homepage>
 
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
-          <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">User</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Message</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Setting</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+                    <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
+                    <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Setting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Description_page/index.html">Task</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Todo_page/todo.html">To DO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./login_page/index.html">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-      <div id='calendar'></div>
+            <div id='calendar'></div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-1</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
+            <div class="media">
+                <div class="h-status">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="media-body">
+                    <h5 class="mt-0">Project-1</h5>
+                    <p>Description</p>
+                </div>
+                <div class="assigned-to">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-2</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
+            <div class="media">
+                <div class="h-status">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="media-body">
+                    <h5 class="mt-0">Project-2</h5>
+                    <p>Description</p>
+                </div>
+                <div class="assigned-to">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
+            <div class="media">
+                <div class="h-status">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="media-body">
+                    <h5 class="mt-0">Project-3</h5>
+                    <p>Description</p>
+                </div>
+                <div class="assigned-to">
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
+            </div>
+
         </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-3</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
 
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
-      </div>
-    
-    </div>
+        <!-----home page----->
 
-    <!-----home page----->
+        <!-----Description page----->
+        <div class="partthree">
+            <div class="containerbg">
 
-    <!-----Description page----->
+                <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
-        <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">User</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Task</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Setting</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </nav>
+                        <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
+                        <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">User</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Task</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
-  <div>
-      <div class="return-deescription">
-        <nav class="arrow-left-deescription">
-          <a class="fas fa-arrow-left" aria-current="page" href="#home-page" style="text-decoration:none;"><span>Project-1</span></a>
-        </nav>
-      </div> 
+                <div>
+                    <div class="return-deescription">
+                        <nav class="arrow-left-deescription">
+                            <a class="fas fa-arrow-left" aria-current="page" href="#home-page" style="text-decoration:none;"><span>Project-1</span></a>
+                        </nav>
+                    </div>
 
-    <div class="title-description">
-      <nav class="navbar navbar-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
-        </div>
-      </nav>
-    </div>
+                    <div class="title-description">
+                        <nav class="navbar navbar-light">
+                            <div class="container-fluid">
+                                <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
+                            </div>
+                        </nav>
+                    </div>
 
-    <br>
+                    <br>
 
-    <div class="description-form">
-      <textarea class="description-control" placeholder="Leave a description here" id="floatingTextarea2">
+                    <div class="description-form">
+                        <textarea class="description-control" placeholder="Leave a description here" id="floatingTextarea2">
       </textarea>
-    </div>
+                    </div>
 
-    <hr>
+                    <hr>
 
-  <div class="assign-to">
-    <h2><strong>Assigned to</strong></h2>
-    <a href><i class="fas fa-user-circle"></i></a>
-    <a href><i class="fas fa-user-circle"></i></a>
-    <a href><i class="fas fa-user-circle"></i></a>
-    <a href><i class="fas fa-user-plus"></i></a>
-  </div>
+                    <div class="assign-to">
+                        <h2><strong>Assigned to</strong></h2>
+                        <a href><i class="fas fa-user-circle"></i></a>
+                        <a href><i class="fas fa-user-circle"></i></a>
+                        <a href><i class="fas fa-user-circle"></i></a>
+                        <a href><i class="fas fa-user-plus"></i></a>
+                    </div>
 
-  <hr>
+                    <hr>
 
-  <div class="due-date">
-    <h2><strong>Due Date</strong></h2>
-    <h6>17 JULY 2021</h6>
-  </div>
+                    <div class="due-date">
+                        <h2><strong>Due Date</strong></h2>
+                        <h6>17 JULY 2021</h6>
+                    </div>
 
-  <hr>
+                    <hr>
 
-  <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
-  </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
+                    </div>
 
-  </div>
+                </div>
+            </div>
 
-  <!-----Description page----->
+            <!-----Description page----->
 
-  <!-----User page------>
+            <!-----User page------>
+            <div class="userpage">
 
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
-      <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">User</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Message</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Setting</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                        <a class="navbar-brand" href="#home-page"><i class="fas fa-home"></i></a>
+                        <a class="navbar-brand" href="#home-page"><i class="fas fa-search"></i></a>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">User</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Message</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
-  <div class="status">
-    <div class="dates">
-        <div class="today">
-          <a class="fas fa-arrow-left" aria-current="page" href="#home-page" style="text-decoration:none;"><span>User</span></a>
-        </div>
-        <div class="date">
-            <h1>17 JULY 2021</h1>
-        </div>
-    </div>
-    
-
-    <hr>
-
-    <div class="task">
-        <div class="taskbg">
-            <div class="taskcheck">
-                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
-            </div>
-            <div class="tasks">
-                <p>xxxxxTask 1xxxxx</p>
-            </div>
-        </div>
-    </div>
-    <div class="task">
-        <div class="taskbg">
-            <div class="taskcheck">
-                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
-            </div>
-            <div class="tasks">
-                <p>xxxxxTask 2xxxxx</p>
-            </div>
-        </div>
-    </div>
-    <div class="task">
-        <div class="taskbg">
-            <div class="taskcheck">
-                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
-            </div>
-            <div class="tasks">
-                <p>xxxxxTask 3xxxxx</p>
-            </div>
-        </div>
-    </div>
-    <div class="task">
-        <div class="taskbg">
-            <div class="taskcheck">
-                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
-            </div>
-            <div class="tasks">
-                <p>xxxxxTask 4xxxxx</p>
-            </div>
-        </div>
-    </div>
-    <div class="task">
-      <div class="taskbg">
-          <div class="taskcheck">
-              <input type="checkbox" name="topping" id="checkbox" value="checkbox">
-          </div>
-          <div class="tasks">
-              <p>xxxxxTask 5xxxxx</p>
-          </div>
-      </div>
-      </div>
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
-        </div>
-    </div>
-  </div>
+                <div class="status">
+                    <div class="dates">
+                        <div class="today">
+                            <a class="fas fa-arrow-left" aria-current="page" href="#home-page" style="text-decoration:none;"><span>User</span></a>
+                        </div>
+                        <div class="date">
+                            <h1>17 JULY 2021</h1>
+                        </div>
+                    </div>
 
 
-  <!-----User page------>
+                    <hr>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.js" integrity="sha256-6l5QOXZ6Mkg+2tOaJgs8yT7xx2WapaIPQl7qpB55/V0=" crossorigin="anonymous"></script>
-  </main>
-  </body>
+                    <div class="task">
+                        <div class="taskbg">
+                            <div class="taskcheck">
+                                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
+                            </div>
+                            <div class="tasks">
+                                <p>xxxxxTask 1xxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="taskbg">
+                            <div class="taskcheck">
+                                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
+                            </div>
+                            <div class="tasks">
+                                <p>xxxxxTask 2xxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="taskbg">
+                            <div class="taskcheck">
+                                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
+                            </div>
+                            <div class="tasks">
+                                <p>xxxxxTask 3xxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="taskbg">
+                            <div class="taskcheck">
+                                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
+                            </div>
+                            <div class="tasks">
+                                <p>xxxxxTask 4xxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <div class="taskbg">
+                            <div class="taskcheck">
+                                <input type="checkbox" name="topping" id="checkbox" value="checkbox">
+                            </div>
+                            <div class="tasks">
+                                <p>xxxxxTask 5xxxxx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg btn-block">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-----User page------>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.js" integrity="sha256-6l5QOXZ6Mkg+2tOaJgs8yT7xx2WapaIPQl7qpB55/V0=" crossorigin="anonymous"></script>
+    </main>
+</body>
+
 </html>
