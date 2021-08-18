@@ -1,55 +1,47 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+console.log('hello')
+const date = document.querySelector('.date > h1')
+date.innerHTML = moment().format('L'); 
+const input = document.querySelector('input#enterAdd');
+const btn = document.querySelector('.addTask > button');
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
+btn.addEventListener('click', addList);
+input.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        addList();
+        //console.log('enter: ' + e.key)
     }
-  }
+})
+
+function addList(e) {
+    console.log('hi' + e + ": " + input.value)
+    const notCompleted = document.querySelector('.notCompleted');
+    const Completed = document.querySelector('.complete');
+
+    const newLi = document.createElement('li');
+    const checkBtn = document.createElement('button');
+    const delBtn = document.createElement('button');
+
+    checkBtn.innerHTML = '<i class="fa fa-check"></i>';
+    delBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+
+
+
+    if (input.value !== '') {
+        newLi.textContent = input.value;
+        input.value = '';
+        notCompleted.appendChild(newLi);
+        newLi.appendChild(checkBtn);
+        newLi.appendChild(delBtn);
+    }
+
+    checkBtn.addEventListener('click', function () {
+        const parent = this.parentNode;
+        parent.remove();
+        Completed.appendChild(parent);
+        checkBtn.style.display = 'none';
+    })
+    delBtn.addEventListener('click', function () {
+        const parent = this.parentNode;
+        parent.remove();
+    })
 }

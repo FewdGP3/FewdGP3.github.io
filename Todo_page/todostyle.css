@@ -4,7 +4,15 @@
     font-family: "montserrat", Arial, Helvetica, sans-serif ;
     box-sizing: border-box;
 }
-
+.status span {
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+    margin-left: 16px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
 .status {
     background-image: linear-gradient(rgb(255, 225, 243), rgb(255, 255, 255));
     width: 100%;
@@ -12,49 +20,76 @@
     display: flex;
     flex-direction: column;
 }
+.addTask{
+    display: flex;
+}
 .textb{
     width: 100%;
     border: none;
-    border-bottom: 2px solid rgb(7, 7, 7);
+    border-bottom: 2px solid rgb(68, 68, 68);
     background: none;
     padding: 10px;
     outline: none;
     font-size: 18px;
 }
+.addTask button{
+    margin: 0 10px;
+    background: rgb(68, 68, 68);
+    color:#fff;
+    opacity: 80%;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 h3{
     margin: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(68, 68, 68);
 }
-.task{
+
+ol li{
     width: 100%;
     background: rgba(255,255,255,0.5);
     padding: 16px;
     margin: 8px 0;
     overflow: hidden;
+    border-radius: 10px;
 }
-.task i{
+
+li button{
     float: right;
-    margin-left: 20px;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    border : none;
+    outline: none;
     cursor: pointer;
+    
 }
+.complete li{
+    background: rgba(0, 0, 0,0.5);
+    color: white;
+} 
 .status h5 {
     color: rgb(48, 48, 48);
     margin: 20px;
 }
 
 .status a {
-    color: #5e5e5e;
-}
-
-.status span {
-    color: #000000;
-    font-family: IBM Plex Sans;
-    font-size: 20px;
-    margin-left: 16px;
+    color: rgb(68, 68, 68);
 }
 
 .status h1 {
-    color: rgb(48, 48, 48);
+    color: rgb(68, 68, 68);
     margin-left: 20px;
+    font-weight: bolder;
 }
 
 .today {
