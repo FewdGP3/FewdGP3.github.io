@@ -352,15 +352,23 @@ input#checkbox {
     .loginbg {
         flex: 1;
     }
-    .homepage nav {
+
+    #calendar {
+        height: 45vh;
+    }
+
+    .partthree .fas{
         display: none;
     }
-    .userpage nav {
+
+    .partthree .nav-link {
         display: none;
     }
-    .containerbg nav {
-        display: none;
+
+    .partthree .navbar {
+        height: 56px;
     }
+
     .login {
         width: 70%;
         height: 80%;
@@ -388,9 +396,7 @@ input#checkbox {
         display: flex;
         justify-content: center;
     }
-    #calendar{
-        height: auto;
-    }
+   
     .containerbg {
         display: flex;
         flex-direction: column;
@@ -410,9 +416,15 @@ input#checkbox {
         display: flex;
         flex-direction: column;
         flex: 2;
+        height: 100vh;
     }
     
-    .partthree{
-        height: 100%;
+
+    /* .homepage button {
+        display: none;
+    } */
+
+    .userpage {
+        display: none;
     }
 }
