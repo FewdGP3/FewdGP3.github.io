@@ -52,7 +52,6 @@
     margin-bottom: 20px;
 }
 
-
 /*--Description page--*/
 .containerbg{
     display: none;
@@ -325,17 +324,41 @@ input#checkbox {
         display: flex;
         height: 100vh;
     }
+    .webNav{
+        flex: 1;
+        background-color: wheat;
+    }
+    .webNav2{
+        display: flex;
+    }
+    .webNav2-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .webNav2 img {
+        width: 90px;
+        margin-bottom: 20px;
+    }
     #home-page {
         height: 100vh;
         flex: 2;
     }
+   
     .homepage{
         height: 100vh;
     }
     .loginbg {
         flex: 1;
     }
-    .partthree nav {
+    .homepage nav {
+        display: none;
+    }
+    .userpage nav {
+        display: none;
+    }
+    .containerbg nav {
         display: none;
     }
     .login {

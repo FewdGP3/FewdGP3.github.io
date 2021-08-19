@@ -72,6 +72,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.webNav{
+    flex: 1;
+    background-color: wheat;
+}
 /*--Description page--*/
 
 .description {
