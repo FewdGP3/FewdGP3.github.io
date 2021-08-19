@@ -18,6 +18,10 @@
 #calendar {
     margin: 13px;
 }
+.fc-icon-chevron-left:before, .fc-icon-chevron-right:before{
+    color: white;
+}
+
 .status span {
     color: rgb(68, 68, 68);
     font-size: 20px;
