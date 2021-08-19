@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { Service } from './service'
+import { Service } from '../service/service'
 
 export class Controller {
     constructor(private service: Service) {

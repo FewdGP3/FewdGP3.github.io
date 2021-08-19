@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { encodeComma, decodeComma } from './enDeCode'
+import { encodeComma, decodeComma } from '../enDeCode'
 
 export class Service {
     constructor() {

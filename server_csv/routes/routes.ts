@@ -1,5 +1,5 @@
 import express from 'express';
-import { Controller } from './controller';
+import { Controller } from '../controller/controller';
 // import {request, response} from 'express'
 export function createRoute (controller: Controller) {
 
