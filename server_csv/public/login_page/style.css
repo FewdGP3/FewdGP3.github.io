@@ -36,15 +36,46 @@
     font-size: 120%;
 }
 
-.login-name {
-    margin-bottom: 20px;
+#username{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
 }
+#user-pw{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(7, 7, 7);
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
 
 .forgot {
     margin-bottom: 20px;
 }
 
-
+#loginbt{
+    margin: 0 10px;
+    background: #222;
+    color:#fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.webNav{
+    flex: 1;
+    background-color: wheat;
+}
 /*--Description page--*/
 
 .description {
