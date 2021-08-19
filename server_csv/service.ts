@@ -32,16 +32,14 @@ export class Service {
         post: {
             id: string,
             name: string,
-            description: string,
-            assignedto: string,
-            duedate: string,
-            status: string,
+            date: string,
+            completed: string,
         }
     ) {
 
         const filePath = __dirname + '/TodoList.csv'
         console.log(post)
-        const reformedInput = "\n" + post.id + "," + encodeComma(post.name) + "," + encodeComma(post.description) + "," + encodeComma(post.assignedto) + "," + encodeComma(post.duedate) + "," + encodeComma(post.status)
+        const reformedInput = "\n" + post.id + "," + encodeComma(post.name) + "," + encodeComma(post.date) + "," + encodeComma(post.completed) 
 
         // debug
         // console.log('encoded comma: ' + reformedInput)
@@ -72,12 +70,7 @@ export class Service {
 
     // [done]
     async updateTodoList(
-        id: string,
-        name: string,
-        description: string,
-        assignedto: string,
-        duedate: string,
-        status: string) {
+        id: string) {
 
         const filePath = __dirname + '/TodoList.csv'
         const data = await fs.promises.readFile(filePath, 'utf-8')
@@ -87,13 +80,8 @@ export class Service {
         for (let i = 0; i < lines.length; i++) {
             if (lines[i] == undefined || lines[i].trim() == "") continue;
             let words = lines[i].split(',');
-            console.log(`words[0]: ${words[0]}, id: ${id}, ${words[0] == id}`)
             if (words[0] == id) {
-                words[1] = encodeComma("" + name);
-                words[2] = encodeComma("" + description);
-                words[3] = encodeComma("" + assignedto);
-                words[4] = encodeComma("" + duedate);
-                words[5] = encodeComma("" + status);
+                words[3] = 'yes'
                 result = result + words.join(',') + "\n"
             } else {
                 result = result + lines[i] + "\n"
