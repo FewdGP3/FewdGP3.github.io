@@ -77,15 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
     initialView: "dayGridMonth",
     selectable: true,
     dateClick: function (info) {
-        // info.dateStr 係
+        // info.dateStr 係你click的日期
       console.log("clicked " + info.dateStr);
       selectDate = info.dateStr
+      // items 係你click的日期有邊d items
       let items = itemList.filter((item) => item.duedate === info.dateStr);
       let html = "";
+      // 清空另一日的item
       const notCompleted = document.querySelector(".notCompleted");
       const Completed = document.querySelector(".complete");
       notCompleted.innerHTML = "";
       Completed.innerHTML = "";
+      // display item 出 網站
       console.log(items);
       for (let item of items) {
         if(item.isCompleted==='no'){
