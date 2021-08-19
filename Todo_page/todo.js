@@ -8,7 +8,7 @@ btn.addEventListener('click', addList);
 input.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
         addList();
-        //console.log('enter: ' + e.key)
+        //console.log('enter:   ' + e.key)
     }
 })
 
