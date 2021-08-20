@@ -1,5 +1,6 @@
 const addItemButton = document.querySelector('#addItemButton')
 
+document.querySelector('#displayName').innerHTML = window.localStorage.getItem('displayName')
 
 addItemButton.addEventListener('click',()=> {
     const text = document.querySelector('.description-control')
