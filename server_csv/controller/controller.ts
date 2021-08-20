@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { Service } from './service'
+import { Service } from '../service/service'
 
 export class Controller {
     constructor(private service: Service) {
@@ -107,11 +107,6 @@ export class Controller {
             res.status(200).json(
                 await this.service.updateTodoList(
                     req.params.id,
-                    req.body.name,
-                    req.body.description,
-                    req.body.assignedto,
-                    req.body.duedate,
-                    req.body.status
                 )
             )
         } catch (e) {
