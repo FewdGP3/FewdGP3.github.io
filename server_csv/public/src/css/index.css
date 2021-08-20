@@ -32,6 +32,10 @@
     align-items: center;
 }
 
+.login-img img {
+    margin-top: 10px;
+}
+
 .login img {
     width: 90px;
     margin-bottom: 20px;
@@ -75,6 +79,43 @@
 
 
 /*--home page--*/
+.webNav{
+    flex: 1;
+    background-color: wheat;
+}
+
+.webNav img {
+    font-size: 10px;
+}
+
+.navbar {
+    display: block;
+}
+
+.navbar-nav {
+    height: 200px;
+    justify-content: space-around;
+}
+
+.webNav{
+    display: none;
+}
+
+.webNav2 {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    height: 200px;
+    justify-content: space-around;
+}
+
+
 
 #calendar .fc-scrollgrid-sync-table a {
     font-size: 18px;
@@ -236,6 +277,11 @@
 
 
 /*---User page---*/
+.user_page {
+    flex: auto;
+    width: 100vh;
+}
+
 .userpage{
     display: none;
 }
@@ -316,6 +362,11 @@ input#checkbox {
     height: 25%;
 }
 
+.flex_item {
+    display: flex;
+}
+
+
 @media screen and (min-width: 768px) {
     body{
         height: 100vh;
@@ -324,6 +375,11 @@ input#checkbox {
         display: flex;
         height: 100vh;
     }
+
+    .navbar {
+        display: none;
+    }
+
     .webNav{
         flex: 1;
         background-color: wheat;
@@ -341,6 +397,13 @@ input#checkbox {
         width: 90px;
         margin-bottom: 20px;
     }
+
+    .nav-link {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+    }
+
     #home-page {
         height: 100vh;
         flex: 2;
@@ -426,5 +489,26 @@ input#checkbox {
 
     .userpage {
         display: none;
+    }
+
+    .webNav{
+        display: block;
+    }
+    
+    .user_nav_item {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .signout {
+        margin-left: 10px;
+    }
+
+    .fa-sign-out-alt:before {
+        color: black;
+        content: "\f2f5";
+        font-size: 30px;
     }
 }
