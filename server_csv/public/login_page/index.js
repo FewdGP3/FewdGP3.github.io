@@ -1,3 +1,5 @@
+const tmpStorage = window.localStorage;
+
 
 async function login() {
     const username = document.querySelector('#username').value
@@ -22,7 +24,8 @@ async function login() {
     const data = await res.json()
     console.log(res.status)
     console.log(data)
-    if(res.status === 200){
+    if (res.status === 200) {
+        tmpStorage.setItem('displayName', dataObj.username)
         window.location = '/index.html'
     }
 }
@@ -32,7 +35,7 @@ document.querySelector('.loginbt').addEventListener('click', () => {
 })
 
 
-document.addEventListener('keyup',(e) => {
+document.addEventListener('keyup', (e) => {
     console.log(e.key)
     if (e.key === 'Enter') {
         login();
