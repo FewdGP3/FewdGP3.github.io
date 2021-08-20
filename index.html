@@ -97,53 +97,56 @@
 
       <div id='calendar'></div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
+      <div id='tasks-container'>
+        <!-- <div class="media">
+          <div class="h-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">Project-1</h5>
+            <p>Description</p>
+          </div>
+          <div class="assigned-to">
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-user-circle"></i>
+          </div>
         </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-1</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
+        <div class="media">
+          <div class="h-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">Project-2</h5>
+            <p>Description</p>
+          </div>
+          <div class="assigned-to">
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-user-circle"></i>
+          </div>
         </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-2</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
 
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="media-body">
-          <h5 class="mt-0">Project-3</h5>
-          <p>Description</p>
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
+        <div class="media">
+          <div class="h-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">Project-3</h5>
+            <p>Description</p>
+          </div>
+          <div class="assigned-to">
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div> -->
 
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary btn-lg btn-block addTask">+</button>
-      </div>
 
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary btn-lg btn-block addTask">+</button>
     </div>
 
     <!-----home page----->
@@ -151,50 +154,50 @@
     <!-----Description page----->
 
     <div class="descriptionPopup-wrapper hide">
-        <div class="descriptionPopup">
-          <div class="descriptionpop-content"></div>
-          <div style="text-align: center;"></div>
+      <div class="descriptionPopup">
+        <div class="descriptionpop-content"></div>
+        <div style="text-align: center;"></div>
 
-            <div class="title-description">
-                <nav class="navbar navbar-light">
-                  <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
-                  </div>
-                </nav>
-              </div>
-        
-              <br>
-        
-              <div class="description-form">
-                <textarea class="description-control" placeholder="Leave a description here" id="floatingTextarea2">
-              </textarea>
-              </div>
-        
-              <hr>
-        
-              <div class="assign-to">
-                <h2><strong>Assigned to</strong></h2>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-plus"></i></a>
-              </div>
-    
-              <hr>
-        
-              <div class="due-date">
-                <h2><strong>Due Date</strong></h2>
-                <input type="date" name="" id="">
-              </div>
-                
-                <button id="Confirm">Confirm</button>
-                <button id="Cancel">Cancel</button>
+        <div class="title-description">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
+            </div>
+          </nav>
         </div>
+
+        <br>
+
+        <div class="description-form">
+          <textarea class="description-control" placeholder="Leave a description here" id="floatingTextarea2">
+              </textarea>
+        </div>
+
+        <hr>
+
+        <div class="assign-to">
+          <h2><strong>Assigned to</strong></h2>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-plus"></i></a>
+        </div>
+
+        <hr>
+
+        <div class="due-date">
+          <h2><strong>Due Date</strong></h2>
+          <input type="date" name="" id="">
+        </div>
+
+        <button id="Confirm">Confirm</button>
+        <button id="Cancel">Cancel</button>
+      </div>
     </div>
 
     <!-----Description page----->
 
-    
+
     <!-- popup html -->
     <div class="popup-wrapper hide">
       <div class="popup">
@@ -207,51 +210,51 @@
     </div>
     <!-- popup page -->
 
-  
+
     <!-----Add On Description page----->
 
-        <div class="addonDescriptionPopup-wrapper hide">
-          <div class="addonDescriptionPopup">
-            <div class="addonDescriptionpop-content"></div>
-            <div style="text-align: center;"></div>
-  
-              <div class="addonTitle-description">
-                  <nav class="navbar navbar-light">
-                    <div class="container-fluid">
-                      <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
-                    </div>
-                  </nav>
-                </div>
-          
-                <br>
-          
-                <div class="addonDescription-form">
-                  <textarea class="addonDescription-control" placeholder="Leave a description here" id="floatingTextarea2">
+    <div class="addonDescriptionPopup-wrapper hide">
+      <div class="addonDescriptionPopup">
+        <div class="addonDescriptionpop-content"></div>
+        <div style="text-align: center;"></div>
+
+        <div class="addonTitle-description">
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
+            </div>
+          </nav>
+        </div>
+
+        <br>
+
+        <div class="addonDescription-form">
+          <textarea class="addonDescription-control" placeholder="Leave a description here" id="floatingTextarea2">
                 </textarea>
-                </div>
-          
-                <hr>
-          
-                <div class="addonAssign-to">
-                  <h2><strong>Assigned to</strong></h2>
-                  <a href><i class="fas fa-user-circle"></i></a>
-                  <a href><i class="fas fa-user-circle"></i></a>
-                  <a href><i class="fas fa-user-circle"></i></a>
-                  <a href><i class="fas fa-user-plus"></i></a>
-                </div>
-      
-                <hr>
-          
-                <div class="addonDue-date">
-                  <h2><strong>Due Date</strong></h2>
-                  <input type="date" name="" id="">
-                </div>
-                  
-                  <button id="addonConfirm">Confirm</button>
-                  <button id="addonCancel">Cancel</button>
-          </div>
+        </div>
+
+        <hr>
+
+        <div class="addonAssign-to">
+          <h2><strong>Assigned to</strong></h2>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-circle"></i></a>
+          <a href><i class="fas fa-user-plus"></i></a>
+        </div>
+
+        <hr>
+
+        <div class="addonDue-date">
+          <h2><strong>Due Date</strong></h2>
+          <input type="date" name="" id="">
+        </div>
+
+        <button id="addonConfirm">Confirm</button>
+        <button id="addonCancel">Cancel</button>
       </div>
-  
+    </div>
+
     <!-----Add On Description page----->
 
 
@@ -260,8 +263,9 @@
       <div class="searchbarpopup">
 
         <div class="searchbarpop-content"></div>
-          <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for anything..." title="Type something">
-          <ul id="myUL">
+        <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for anything..."
+          title="Type something">
+        <ul id="myUL">
           <li><a href="#">a</a></li>
           <li><a href="#">b</a></li>
 
@@ -273,7 +277,7 @@
           <li><a href="#">task</a></li>
         </ul>
       </div>
-     </div>
+    </div>
 
     <!-- search bar -->
 

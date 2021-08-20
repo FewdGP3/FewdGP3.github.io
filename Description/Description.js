@@ -7,6 +7,35 @@ const descriptionCancelBtn = document.querySelector('#Cancel');
 
 const addDescriptionButtons = document.querySelectorAll(".media")
 
+// const tasksContainer = document.querySelector('#tasks-container')
+
+const loadData = async () => {
+    const datas = await fetch('http://localhost:8080/todolist')
+    const dataArray = datas.json()
+    for (let data of dataArray){
+        document.querySelector("#tasks-container").innerHTML = `
+        <div class="media">
+          <div class="h-status">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">${data.name}</h5>
+            <p>${data.description}</p>
+          </div>
+          <div class="assigned-to">
+            <p>${data.assignedTo}</p>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+        `
+    }
+}
+loadData()
+
+
+
+
 for (let addDescriptionButton of addDescriptionButtons) {
     addDescriptionButton.addEventListener('click', (event) => {
         // event.preventDefault();
