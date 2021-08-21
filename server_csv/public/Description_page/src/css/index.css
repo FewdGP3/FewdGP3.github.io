@@ -51,7 +51,7 @@
 
 /*--Description page--*/
 
-.description {
+/* .description {
     background-color: #EFF3F4;
 }
 
@@ -63,7 +63,7 @@
 
 .arrow-left-deescription a {
     color: #5e5e5e!important;
-}
+} */
 
 
 /*--login page--*/
@@ -141,6 +141,7 @@
 .d-flex {
     margin-top: 20px;
 }
+
 /*--Description page--*/
 
 .title-description span {
@@ -150,7 +151,7 @@
     display: flex;
     justify-content: center!important;
     font-family: IBM Plex Sans!important;
-    border-bottom: groove #5e5e5e!important;
+    border-bottom: groove #5e5e5e!important; 
 }
 
 .description-form {
@@ -160,14 +161,22 @@
     justify-content: center;
 }
 
-.description-form textarea{
+/* .project-form {
+    padding-left: 15px!important;
+    font-family: IBM Plex Sans!important;
+    display: flex;
+    justify-content: center;
+} */
+
+/* .description-form textarea{
     width: 80%;
     height: 50px;
     padding: 0px;
     font-family: IBM Plex Sans;
     cursor: pointer;
     border-width: 0px;
-}
+} */
+
 .return-deescription{
     margin: 10px;
     height: 18.88px;
@@ -195,7 +204,19 @@
     font-weight: bold;
     border-bottom: groove #5e5e5e
 }
-
+.project-control {
+    width: 80%;
+    height: 50px;
+    border-width: 0px;
+    color: #0C2D48;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+    background-image: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .description-control {
     width: 80%;
     height: 50px;
@@ -416,11 +437,11 @@ background-color: rgb(8, 148, 104);
     
 }
 
-.addonDescriptionPopup-wrapper #Confirm{
+.addonDescriptionPopup-wrapper #addonConfirm{
 background-color: rgb(8, 85, 230);
 }
 
-.addonDescriptionPopup-wrapper #Cancel{
+.addonDescriptionPopup-wrapper #addonCancel{
 background-color: rgb(8, 148, 104);
 }
 
