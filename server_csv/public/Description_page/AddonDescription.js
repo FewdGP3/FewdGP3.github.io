@@ -24,6 +24,7 @@ addonDescriptionCancelBtn.addEventListener('click', (event) => {
 //     event.preventDefault();
 //     addonDescriptionPopup.classList.add('hide');
 // })
+
 addonDescriptionPopup.addEventListener('click', (e) => {
     e.stopPropagation();
 })
@@ -31,4 +32,4 @@ document.querySelector('main').addEventListener('click', (event) => {
     console.log('main')
 })
 
-const newUserDescription = `<p>'‘Task’' + ${userDescription.value}</p>`
+// const newAddonUserProject = `<p>'‘Task’' + ${userDescription.value}</p>`

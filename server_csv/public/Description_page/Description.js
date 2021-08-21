@@ -53,6 +53,29 @@ document.querySelector('main').addEventListener('click', (event) => {
 //         </div>
 //     </div>
 
+descriptionPopup.addEventListener('click', (event) => {
+    // event.preventDefault();
+    // descriptionPopup.classList.add('hide');
+})
+
+const project = [
+    {
+        projectName: '',
+        description: '',
+        assignTo: '',
+        dueDate: '',
+    }
+]
+
+function displayProject(event) {
+    const itmList = document.querySelector('itemList')
+
+    const filiter 
+}
+
+
+
+
 
 const pjinput = document.querySelector("pjinput.description-control");
 const btn = document.querySelector("#Confirm > button");
@@ -64,3 +87,4 @@ input.addEventListener("keyup", (e) => {
     //console.log('enter:   ' + e.key)
   }
 });
+
