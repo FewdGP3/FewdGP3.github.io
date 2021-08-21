@@ -30,3 +30,5 @@ addonDescriptionPopup.addEventListener('click', (e) => {
 document.querySelector('main').addEventListener('click', (event) => {
     console.log('main')
 })
+
+const newUserDescription = `<p>'‘Task’' + ${userDescription.value}</p>`
