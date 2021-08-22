@@ -58,22 +58,27 @@ descriptionPopup.addEventListener('click', (event) => {
     // descriptionPopup.classList.add('hide');
 })
 
-const project = [
-    {
-        projectName: '',
-        description: '',
-        assignTo: '',
-        dueDate: '',
-    }
-]
+// const project = [
+//     {
+//         projectName: '',
+//         description: '',
+//         assignTo: '',
+//         dueDate: '',
+//     }
+// ]
 
-function displayProject(event) {
-    const itmList = document.querySelector('itemList')
+// function displayProject(event) {
+//     const itmList = document.querySelector('itemList')
 
-    const filiter 
+//     const filiter 
+// }
+
+const items = document.querySelector('.media')
+for(const item of items){
+    item.addEventListener('click',()=>{
+        console.log(123)
+    })
 }
-
-
 
 
 

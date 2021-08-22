@@ -520,6 +520,13 @@ font-family: Alumni Sans;
     text-align: center;
     background-color: white;
     opacity: 0.85;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 80vw;
+    padding-top: 50px;
 }
 
 button{
