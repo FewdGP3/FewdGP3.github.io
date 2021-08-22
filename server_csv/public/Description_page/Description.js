@@ -1,11 +1,29 @@
 
-const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
 
-const descriptionConfirmBtn = document.querySelector('#Confirm');
-const descriptionCancelBtn = document.querySelector('#Cancel');
+const Today = document.querySelector('.mediadate');
+function getTodayDate() {
+    let fullDate = new Date();
+    let yyyy = fullDate.getFullYear();
+    let MM = (fullDate.getMonth() + 1) >= 10 ? (fullDate.getMonth() + 1) : ("0" + (fullDate.getMonth() + 1));
+    let dd = fullDate.getDate() < 10 ? ("0"+fullDate.getDate()) : fullDate.getDate();
+    let today = yyyy + "/" + MM + "/" + dd;
+    return today;
+  }
+
+
+// const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
+
+// const descriptionConfirmBtn = document.querySelector('#Confirm');
+// const descriptionCancelBtn = document.querySelector('#Cancel');
 // const descriptionCloseBtn = document.querySelector('.descriptionPopup-close');
 
-const addDescriptionButtons = document.querySelectorAll(".media")
+
+const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
+const descriptionConfirmBtn = document.querySelector('#Confirm');
+const descriptionCancelBtn = document.querySelector('#Cancel');
+
+
+// const mediaDiv = document.querySelector(".media");
 
 for (let addDescriptionButton of addDescriptionButtons) {
     addDescriptionButton.addEventListener('click', (event) => {
@@ -32,64 +50,31 @@ document.querySelector('main').addEventListener('click', (event) => {
     console.log('main')
 })
 
-// descriptionConfirmBtn.addEventListener('click',()=>{
-//     console.log('Project title:'+description-control+assign-to.value);
-// })
+descriptionConfirmBtn.addEventListener('click',()=>{
+    console.log(media.value);
 
-// const projectList = document.querySelector('.media-body')
-    
-// projectList.innerHTML += `
-//     <div class="media">
-//         <div class="h-status">
-//             <i class="fas fa-check-circle"></i>
-//         </div>
-//         <div class="media-body">
-//             <h5 class="mt-0">${text.value}</h5>
-//             <p>Description</p>
-//         </div>
-//         <div class="assigned-to">
-//             <i class="fas fa-user-circle"></i>
-//             <i class="fas fa-user-circle"></i>
-//         </div>
-//     </div>
+    const newMedia = document.querySelector('.project-control'+'.description-control'+'.assign-to'+'.due-date')
+    newMedia.innerHTML = media.value;
+
+    mediaDiv.append(newMedia);
+})
+
+
 
 descriptionPopup.addEventListener('click', (event) => {
     // event.preventDefault();
     // descriptionPopup.classList.add('hide');
 })
 
-// const project = [
-//     {
-//         projectName: '',
-//         description: '',
-//         assignTo: '',
-//         dueDate: '',
-//     }
-// ]
-
-// function displayProject(event) {
-//     const itmList = document.querySelector('itemList')
-
-//     const filiter 
+//ben
+// const medias = document.querySelector('.media')
+// for(const media of medias){
+//     item.addEventListener('click',()=>{
+//         console.log(123)
+//     })
 // }
 
-const medias = document.querySelector('.media')
-for(const media of medias){
-    item.addEventListener('click',()=>{
-        console.log(123)
-    })
-}
 
 
 
-// const pjinput = document.querySelector("pjinput.description-control");
-// const btn = document.querySelector("#Confirm > button");
-
-// btn.addEventListener("click", addProject);
-// input.addEventListener("keyup", (e) => {
-//   if (e.key === "Enter") {
-//     addList();
-//     //console.log('enter:   ' + e.key)
-//   }
-// });
 
