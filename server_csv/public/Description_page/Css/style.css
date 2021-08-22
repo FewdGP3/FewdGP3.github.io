@@ -14,6 +14,35 @@
     margin: 0;
 }
 
+.media {
+    display: flex;
+    margin: 13px;
+    background: linear-gradient(90deg, #dadada, transparent);
+    height: 85px;
+    border-radius: 20px;
+}
+
+.media .h-status {
+    align-items: center;
+    display: flex;
+    margin: 0px 10px 0px 20px;
+}
+
+.media-body {
+    margin: 20px;
+    width: 100%;
+}
+
+.assigned-to {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
 .mediaDate{
     font-family: Alumni Sans;
     font-size: 25px;

@@ -30,6 +30,7 @@ addonDescriptionPopup.addEventListener('click', (e) => {
 })
 document.querySelector('main').addEventListener('click', (event) => {
     console.log('main')
+    addonDescriptionPopup.classList.remove('hide')
 })
 
 // const newAddonUserProject = `<p>'‘Task’' + ${userDescription.value}</p>`
