@@ -15,10 +15,10 @@
 }
 
 .media {
+    font-family: Alumni Sans;
     display: flex;
     margin: 13px;
     background: linear-gradient(90deg, #dadada, transparent);
-    height: 85px;
     border-radius: 20px;
 }
 
