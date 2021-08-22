@@ -73,8 +73,8 @@ descriptionPopup.addEventListener('click', (event) => {
 //     const filiter 
 // }
 
-const items = document.querySelector('.media')
-for(const item of items){
+const medias = document.querySelector('.media')
+for(const media of medias){
     item.addEventListener('click',()=>{
         console.log(123)
     })
@@ -82,14 +82,14 @@ for(const item of items){
 
 
 
-const pjinput = document.querySelector("pjinput.description-control");
-const btn = document.querySelector("#Confirm > button");
+// const pjinput = document.querySelector("pjinput.description-control");
+// const btn = document.querySelector("#Confirm > button");
 
-btn.addEventListener("click", addProject);
-input.addEventListener("keyup", (e) => {
-  if (e.key === "Enter") {
-    addList();
-    //console.log('enter:   ' + e.key)
-  }
-});
+// btn.addEventListener("click", addProject);
+// input.addEventListener("keyup", (e) => {
+//   if (e.key === "Enter") {
+//     addList();
+//     //console.log('enter:   ' + e.key)
+//   }
+// });
 
