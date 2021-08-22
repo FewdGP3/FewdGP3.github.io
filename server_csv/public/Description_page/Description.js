@@ -11,13 +11,6 @@ function getTodayDate() {
   }
 
 
-// const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
-
-// const descriptionConfirmBtn = document.querySelector('#Confirm');
-// const descriptionCancelBtn = document.querySelector('#Cancel');
-// const descriptionCloseBtn = document.querySelector('.descriptionPopup-close');
-
-
 const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
 const descriptionConfirmBtn = document.querySelector('#Confirm');
 const descriptionCancelBtn = document.querySelector('#Cancel');
