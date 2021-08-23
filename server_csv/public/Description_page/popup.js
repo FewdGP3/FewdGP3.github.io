@@ -1,8 +1,8 @@
 const popup = document.querySelector(".popup-wrapper");
-
 const confirmBtn = document.querySelector('#popupConfirm');
 const cancelBtn = document.querySelector('#popupCancel');
 // const closeBtn = document.querySelector('.popup-close');
+
 
 const addButtons = document.querySelectorAll(".addTask")
 for (let addButton of addButtons) {
