@@ -1,89 +1,51 @@
-/* login page */
-
-.loginbg {
-    background: linear-gradient(
-360deg
-, black, #7a7a7a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
-.login {
-    width: 80%;
-    height: 90%;
-    background-color: rgb(255 255 255 / 18%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 50px;
-}
-
-.login-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login img {
-    width: 90px;
-    margin-bottom: 20px;
-}
-
-.login-username {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 120%;
-}
-
-.login-name {
-    margin-bottom: 20px;
-}
-
-.forgot {
-    margin-bottom: 20px;
-}
-
 
 /*--Description page--*/
 
-/* .description {
-    background-color: #EFF3F4;
-}
-
-.return-deescription {
-    margin-left: 8px;
-    height: 18.88px;
-    width: auto;
-}
-
-.arrow-left-deescription a {
-    color: #5e5e5e!important;
-} */
-
-
-/*--login page--*/
-
-
-/*--home page--*/
-
-#calendar .fc-scrollgrid-sync-table a {
-    font-size: 18px;
-    color: black;
+.mediaNav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    font-family: Alumni Sans;
+    color: rgb(68, 68, 68);
     text-decoration: none;
+    line-height: 1;
+    margin: 0;
 }
 
-#calendar .fc-col-header-cell-cushion {
-    color: black;
-    text-decoration: none;
-}
-
-#calendar {
+.media {
+    font-family: Alumni Sans;
+    display: flex;
     margin: 13px;
+    background: linear-gradient(90deg, #dadada, transparent);
+    border-radius: 20px;
+}
+
+.media .h-status {
+    align-items: center;
+    display: flex;
+    margin: 0px 10px 0px 20px;
+}
+
+.media-body {
+    margin: 20px;
+    width: 100%;
+}
+
+.assigned-to {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+.mediaDate{
+    font-family: Alumni Sans;
+    font-size: 25px;
 }
 
 .navbar-brand .fas,
@@ -93,7 +55,17 @@
     top: 1px;
 }
 
-.media {
+.addTask{
+    display: flex;
+}
+
+.mediaContent{
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
     display: flex;
     margin: 13px;
     background: linear-gradient(90deg, #dadada, transparent);
@@ -144,35 +116,63 @@
 
 /*--Description page--*/
 
-.title-description span {
+.title-project span {
     width: 375px;
+    font-size: 25px;
     font-weight: bold;
     margin: 5px;
     display: flex;
-    justify-content: center!important;
-    font-family: IBM Plex Sans!important;
-    border-bottom: groove #5e5e5e!important; 
+    justify-content: center;
+    font-family: Alumni Sans;
+    border-bottom: groove #5e5e5e; 
+}
+.mediaArrow ::before{
+    text-decoration:none;
+    margin-left: 10px;
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+}
+
+.mediaToday span{
+    margin-left: 10px;
+    color: rgb(68, 68, 68);
+    font-family: Alumni Sans;
+}
+
+.mediadate{
+    margin: 20px 0px 10px 35px;
+}
+
+.title-description span {
+    width: 375px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: Alumni Sans;
+    border-bottom: groove #5e5e5e; 
 }
 
 .description-form {
-    padding-left: 15px!important;
-    font-family: IBM Plex Sans!important;
+    padding-left: 15px;
+    font-family: Alumni Sans;
     display: flex;
     justify-content: center;
 }
 
-/* .project-form {
-    padding-left: 15px!important;
-    font-family: IBM Plex Sans!important;
+.project-form {
+    padding-left: 15px;
+    font-family: Alumni Sans;
     display: flex;
     justify-content: center;
-} */
+}
 
 /* .description-form textarea{
     width: 80%;
     height: 50px;
     padding: 0px;
-    font-family: IBM Plex Sans;
+    font-family: Alumni Sans;
     cursor: pointer;
     border-width: 0px;
 } */
@@ -188,22 +188,12 @@
 }
 
 .return-deescription span{
-    color: #000000!important;
-    font-family: IBM Plex Sans!important;
+    color: #000000;
+    font-family: Alumni Sans;
     font-size: 20px;
     margin-left: 16px;
 }
 
-.title-description span{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: IBM Plex Sans;
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: bold;
-    border-bottom: groove #5e5e5e
-}
 .project-control {
     width: 80%;
     height: 50px;
@@ -217,6 +207,7 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
 .description-control {
     width: 80%;
     height: 50px;
@@ -231,10 +222,10 @@
     background-size: cover;
 }
 
-
 .assign-to{
     margin: 0px 0px 20px 20px;
-    
+    font-family: Alumni Sans;
+    height: 85px
 }
 
 .assign-to h2 {
@@ -253,23 +244,28 @@
     margin-left: 5px;   
 }
 
-.due-date {
-    margin: 0px 0px 20px 20px;
-    
+.due-date{
+    font-family: Alumni Sans;
+    margin: 20px 0px 0px 20px;
 }
 
-.descriptionpopup{
+.descriptionPopup{
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.699);
+    background-color: white;
+    opacity: 0.95;
 }
 
 .descriptionPopup-wrapper{
     background: rgba(0, 0, 0 0.7);
-    position: relative;
+    position: fixed;
     top: 0px;
     right: 0px;
     width: 100%;
     height: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .descriptionPopup{
@@ -286,15 +282,16 @@
     border: 0px;
     padding: 14px 25px;
     border-radius: 10px;
-    
 }
 
 .descriptionPopup-wrapper #Confirm{
 background-color: rgb(8, 85, 230);
+font-family: Alumni Sans;
 }
 
 .descriptionPopup-wrapper #Cancel{
 background-color: rgb(8, 148, 104);
+font-family: Alumni Sans;
 }
 
 .descriptionPopup-wrapper{
@@ -312,19 +309,37 @@ background-color: rgb(8, 148, 104);
 
 /*--Add On Description page--*/
 
+.addonTitle-project span {
+    width: 375px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: Alumni Sans;
+    border-bottom: groove #5e5e5e; 
+}
+
 .addonTitle-description span {
     width: 375px;
     font-weight: bold;
     margin: 5px;
     display: flex;
-    justify-content: center!important;
-    font-family: IBM Plex Sans!important;
-    border-bottom: groove #5e5e5e!important;
+    justify-content: center;
+    font-family: Alumni Sans;
+    border-bottom: groove #5e5e5e;
+}
+
+.addonProject-form {
+    padding-left: 15px;
+    font-family: Alumni Sans;
+    display: flex;
+    justify-content: center;
 }
 
 .addonDescription-form {
-    padding-left: 15px!important;
-    font-family: IBM Plex Sans!important;
+    padding-left: 15px;
+    font-family: Alumni Sans;
     display: flex;
     justify-content: center;
 }
@@ -333,36 +348,34 @@ background-color: rgb(8, 148, 104);
     width: 80%;
     height: 50px;
     padding: 0px;
-    font-family: IBM Plex Sans;
+    font-family: Alumni Sans;
     cursor: pointer;
     border-width: 0px;
 }
-/* .return-deescription{
-    margin: 10px;
-    height: 18.88px;
-    width: auto;
-}
-
-.arrow-left-deescription a{
-    color:#5e5e5e!important;
-}
-
-.return-deescription span{
-    color: #000000!important;
-    font-family: IBM Plex Sans!important;
-    font-size: 20px;
-    margin-left: 16px;
-} */
 
 .addonTitle-description span{
     width: 100%;
     display: flex;
     justify-content: center;
-    font-family: IBM Plex Sans;
+    font-family: Alumni Sans;
     margin-top: 20px;
     font-size: 25px;
     font-weight: bold;
     border-bottom: groove #5e5e5e
+}
+
+.addonProject-control {
+    width: 80%;
+    height: 50px;
+    border-width: 0px;
+    color: #0C2D48;
+    font-size: 20px;
+    font-style: bold;
+    cursor: pointer;
+    background-image: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .addonDescription-control {
@@ -379,10 +392,10 @@ background-color: rgb(8, 148, 104);
     background-size: cover;
 }
 
-
 .addonAssign-to{
     margin: 0px 0px 20px 20px;
-    
+    font-family: Alumni Sans;
+    height: 85px;
 }
 
 .addonAssign-to h2 {
@@ -402,25 +415,32 @@ background-color: rgb(8, 148, 104);
 }
 
 .addonDue-date {
-    margin: 0px 0px 20px 20px;
-    
+    margin: 20px 0px 0px 20px;
+    font-family: Alumni Sans;
 }
 
-.addonDescriptionpopup{
+.addonDescriptionPopup{
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.699);
+    background-color: white;
+    opacity: 0.95;
 }
 
 .addonDescriptionPopup-wrapper{
     background: rgba(0, 0, 0 0.7);
-    position: relative;
+    position: fixed;
     top: 0px;
     right: 0px;
     width: 100%;
     height: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: center;
 }
 
 .addonDescriptionPopup{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.699);
     background-color: white;
     opacity: 0.95;
     
@@ -439,28 +459,24 @@ background-color: rgb(8, 148, 104);
 
 .addonDescriptionPopup-wrapper #addonConfirm{
 background-color: rgb(8, 85, 230);
+font-family: Alumni Sans;
 }
 
 .addonDescriptionPopup-wrapper #addonCancel{
 background-color: rgb(8, 148, 104);
-}
-
-.addonDescriptionPopup-wrapper{
-    background: rgba(0, 0, 0 0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+font-family: Alumni Sans;
 }
 
 /*--Add On Description page--*/
 
 /*---popup html---*/
 
-.popup-wrapper{
+.pop-content{
+    font-family: Alumni Sans;
+   
+}
+
+#popupid .popup-wrapper{
     background: rgba(0, 0, 0 0.7);
     position: relative;
     top: 0px;
@@ -468,16 +484,28 @@ background-color: rgb(8, 148, 104);
     width: 100%;
     height: 100%;
     z-index: 10;
+    transition: all 10s;
+    top: 200vh;
 }
 
 .hide{
     display: none;
+    transition: all 10s;
+    top: 200vh;
 }
+
 
 .popup{
     text-align: center;
     background-color: white;
     opacity: 0.85;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 80vw;
+    padding-top: 50px;
 }
 
 button{
@@ -506,152 +534,4 @@ background-color: rgb(8, 148, 104);
     width: 100%;
     height: 100%;
 }
-/*---popup html---*/
 
-/*---User page---*/
-
-.status {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 625px;
-    display: flex;
-    flex-direction: column;
-}
-
-.status h5 {
-    color: rgb(48, 48, 48);
-    margin: 20px;
-}
-
-.status a {
-    color:#5e5e5e;
-}
-
-.status span {
-    color: #000000;
-    font-family: IBM Plex Sans;
-    font-size: 20px;
-    margin-left: 16px;
-}
-
-.status h1 {
-    color: rgb(48, 48, 48);
-    margin-left: 20px;
-}
-
-.today {
-    margin: 10px;
-    width: auto;
-}
-
-.date {
-    margin: 20px 0px 10px 10px;
-}
-
-.task {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.taskbg {
-    background: linear-gradient(
-90deg
-, #dadada, transparent);
-    width: 90%;
-    height: 85px;
-    display: flex;
-    border-radius: 30px;
-    margin-bottom: 20px;
-}
-
-hr {
-    height: 5px;
-}
-
-.taskcheck {
-    flex: 1;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tasks {
-    flex: 3;
-    display: flex;
-    align-items: center;
-}
-
-input#checkbox {
-    width: 25%;
-    height: 25%;
-}
-
-
-/*---search bar---*/
-.searchbarpopup{
-    text-align: center;
-    background-color: white;
-    opacity: 0.85;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 20px;
-    color: black;
-    font-weight: bold;
-}
-
-.searchbarpopup-wrapper{
-    background: rgba(0, 0, 0 0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-.hide{
-    display: none;
-}
-
-.searchbarpop-content{
-    box-sizing: border-box;
-}
-      
-#searchbar {
-background-image: url('/css/searchicon.png');
-background-position: 10px 12px;
-background-repeat: no-repeat;
-width: 100%;
-font-size: 16px;
-padding: 12px 20px 12px 40px;
-border: 1px solid #ddd;
-margin-bottom: 12px;
-}
-      
-#myUL {
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-      
-#myUL li a {
-border: 1px solid #ddd;
-margin-top: -1px; 
-background-color: #f6f6f6;
-padding: 12px;
-text-decoration: none;
-font-size: 18px;
-color: black;
-display: block
-}
-      
-#myUL li a:hover:not(.header) {
-background-color: #eee;
-}
-
-
-/* popup */

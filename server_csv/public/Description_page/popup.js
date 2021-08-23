@@ -11,10 +11,10 @@ for (let addButton of addButtons) {
         popup.classList.remove('hide')
     })
 }
-// popup.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     popup.classList.add('hide');
-// })
+popup.addEventListener('click', (event) => {
+    event.preventDefault();
+    popup.classList.add('hide');
+})
 
 cancelBtn.addEventListener('click', (event) => {
     event.preventDefault();
