@@ -31,7 +31,6 @@ async function main() {
             <i class="fas fa-user-circle"></i>
             <i class="fas fa-user-circle"></i>
             </div>
-            <button id="Del">Del</button>
             </div>
             `
         }
@@ -76,19 +75,6 @@ async function main() {
 
     // })
 
-    delBtn.addEventListener('click', () => {
-        console.log('123')
-       delBtn.parentElement.remove()
-        for(let delBtn of parentElement){
-            delBtn.addEventListener('click',()=>{
-                delBtnπ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®
-            })
-        }
-    })
-
-
-
-    //popup already did, please doulde cfm with sir
     document.querySelector('#bt').addEventListener('click', (event) => {
         console.log('main')
         addonDescriptionPopup.classList.remove('hide')
