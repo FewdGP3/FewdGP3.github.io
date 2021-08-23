@@ -40,6 +40,7 @@ function addList(e) {
     duedate: selectDate,
     isCompleted: "no"
   })
+  
 
   const notCompleted = document.querySelector(".notCompleted");
   const Completed = document.querySelector(".complete");
