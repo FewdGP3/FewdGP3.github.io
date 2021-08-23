@@ -39,7 +39,7 @@ dl, ol, ul {
     flex-direction: column;
 }
 .addTask{
-    display: flex;
+    display: contents;
 }
 .textb{
     width: 100%;

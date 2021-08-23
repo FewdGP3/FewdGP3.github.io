@@ -8,7 +8,7 @@ export class Service {
  
 
     async readTodoList() {
-        const filePath = __dirname + '/TodoList.csv'
+        const filePath = __dirname + '/../todoList.csv'
         const data = await fs.promises.readFile(filePath, 'utf-8')
         const lines = data.split('\n')
         let result: [] = []
@@ -20,7 +20,7 @@ export class Service {
             let words = lines[i].split(',');
             let task: {} = {};
             for (let j = 0; j < words.length; j++) {
-                task[headers[j].trim()] = decodeComma(words[j]);
+                task[headers[j].trim()] = decodeComma(words[j].replace('\r',''));
             }
             // @ts-ignore
             result.push(task);
@@ -37,7 +37,7 @@ export class Service {
         }
     ) {
 
-        const filePath = __dirname + '/TodoList.csv'
+        const filePath = __dirname + '/../todoList.csv'
         console.log(post)
         const reformedInput = "\n" + post.id + "," + encodeComma(post.name) + "," + encodeComma(post.date) + "," + encodeComma(post.completed) 
 
@@ -53,7 +53,7 @@ export class Service {
 
     async deleteTodoList(id: string) {
 
-        const filePath = __dirname + '/TodoList.csv'
+        const filePath = __dirname + '/../todoList.csv'
         const data = await fs.promises.readFile(filePath, 'utf-8')
         const lines = data.split('\n')
         let result: string = "";
@@ -72,7 +72,7 @@ export class Service {
     async updateTodoList(
         id: string) {
 
-        const filePath = __dirname + '/TodoList.csv'
+        const filePath = __dirname + '/../todoList.csv'
         const data = await fs.promises.readFile(filePath, 'utf-8')
         const lines = data.split('\n')
         let result: string = "";
