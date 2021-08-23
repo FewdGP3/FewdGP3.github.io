@@ -1,19 +1,9 @@
-
-
-const Today = document.querySelector('.mediadate');
-function getTodayDate() {
-    let fullDate = new Date();
-    let yyyy = fullDate.getFullYear();
-    let MM = (fullDate.getMonth() + 1) >= 10 ? (fullDate.getMonth() + 1) : ("0" + (fullDate.getMonth() + 1));
-    let dd = fullDate.getDate() < 10 ? ("0"+fullDate.getDate()) : fullDate.getDate();
-    let today = yyyy + "/" + MM + "/" + dd;
-    return today;
-  }
-
-
 const descriptionPopup = document.querySelector(".descriptionPopup-wrapper");
 const descriptionConfirmBtn = document.querySelector('#Confirm');
 const descriptionCancelBtn = document.querySelector('#Cancel');
+
+const today = new Date();
+document.querySelector("#mediadate").innerHTML = `<h1> ${today.getDate()} - ${today.getMonth() + 1} - ${today.getFullYear()} </h1>`
 
 
 // const mediaDiv = document.querySelector(".media");
@@ -39,7 +29,7 @@ descriptionCancelBtn.addEventListener('click', (event) => {
 descriptionPopup.addEventListener('click', (e) => {
     e.stopPropagation();
 })
-document.querySelector('main').addEventListener('click', (event) => {
+document.querySelector('#bt').addEventListener('click', (event) => {
     console.log('main')
 })
 
@@ -66,8 +56,6 @@ descriptionPopup.addEventListener('click', (event) => {
 //         console.log(123)
 //     })
 // }
-
-
 
 
 

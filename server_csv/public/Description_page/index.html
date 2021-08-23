@@ -18,17 +18,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" rel="stylesheet">
   <script>
 
-  
   </script>
-  <title>TO DO LIST</title>
+  <title>Project</title>
 
 </head>
 
 <body>
 
   <main>
-     
-
+    <!-- ---home page----->
+   
+    <div class="wrapper">
+      <div class="wave one"></div>
+      <div class="wave two"></div>
+      <div class="wave three"></div>
+      <div class="title">Description</div>
+    </div>
+   
       <div class="mediaNav">
         <div class="mediaDate">
           <div class="mediaToday">
@@ -37,160 +43,21 @@
               style="text-decoration:none;"><span>Description</span></a>
             </div>
           </div>
-          <div class="mediadate">
+          <div id="mediadate">
             <h1>23 Aug 2021</h1>
           </div>
         </div>
   
-
-        <!-- <hr>
-        <div class="mediaList">
-            <div class="media">
-                <input type="text" class="mediaContent" id="mediaId" placeholder="Add New Project">
-        </div>
-
-        <div class="mediaList">
-          <div class="media">
-              <input type="text" class="mediaContent" id="mediaId" placeholder="Add New Project">
-      </div>
-        
-      <div class="mediaList">
-          <div class="media">
-              <input type="text" class="mediaContent" id="mediaId" placeholder="Add New Project">
-      </div>
-      
-
-
-      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-primary btn-lg btn-block addTask">+</button>
-      </div>
-
-    </div> -->
     <div class="mediaList">
       
+      
     </div>
-    <div class="d-flex justify-content-center">
+    <div id="bt" class="d-flex justify-content-center">
       <button type="button" class="btn btn-primary btn-lg btn-block addTask">+</button>
     </div>
 
-<!-- 
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="media-body">
-          <h5 class="mt-02"><p></p></h5>
-          
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="h-status">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="media-body">
-          <h5 class="mt-03"><p></p></h5>
-          
-        </div>
-        <div class="assigned-to">
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-          <i class="fas fa-user-circle"></i>
-        </div>
-      </div>
-    </div> -->
-
     <!-----home page----->
 
-    <!-----Description page----->
-
-    <div class="descriptionPopup-wrapper hide">
-        <div class="descriptionPopup">
-          <div class="descriptionPop-content"></div>
-          <div style="text-align: center;"></div>
-
-            <div class="title-project">
-                <nav class="navbar navbar-light">
-                  <div class="container-fluid">
-
-                    
-                    <span class="navbar-brand mb-0 h1">PROJECT</span>
-                  </div>
-                </nav>
-              </div>
-              <br>
-                    <div class="project-form">
-                      <textarea class="project-control" id="floatingTextarea1" placeholder="Leave a project name here">
-                      </textarea>
-                    </div>
-
-                    
-                    <div class="title-description">
-                      <nav class="navbar navbar-light">
-                        <div class="container-fluid">
-
-                          <span class="navbar-brand mb-0 h1">DESCRIPTION</span>
-                        </div>
-                      </nav>
-                    </div>
-                    <br>      
-
-              <div class="description-form">
-                <textarea class="description-control" placeholder="Leave a description here" id="floatingTextarea2">
-              </textarea>
-              </div>
-        
-              <hr>
-        
-              <div class="assign-to">
-                <h2><strong>Assigned to</strong></h2>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-circle"></i></a>
-                <a href><i class="fas fa-user-plus"></i></a>
-              </div>
-    
-              <hr>
-        
-              <div class="due-date">
-                <h2><strong>Due Date</strong></h2>
-                <input type="date" name="" id="">
-              </div>
-                
-                <button id="Confirm">Confirm</button>
-                <button id="Cancel">Cancel</button>
-        </div>
-    </div>
-
-    <!-----Description page----->
-
-    
-    <!-----popup html----->
-
-    <div id='popupid' class="popup-wrapper hide">
-      <div class="popup">
-        <div class="pop-content">
-          <h2>Do you wanna add this event?</h2>
-          <button id="popupConfirm">Confirm</button>
-          <button id="popupCancel">Cancel</button>
-        </div>
-      </div>
-    </div>
-    
-    <!-----popup page----->
-
-  
     <!-----Add On Description page----->
 
     <div class="addonDescriptionPopup-wrapper hide">
@@ -208,8 +75,7 @@
             </div>
             <br>
                   <div class="addonProject-form">
-                    <textarea class="addonProject-control" id="floatingTextarea3" placeholder="Leave a project name here">
-                    </textarea>
+                    <textarea class="addonProject-control" id="floatingTextarea3" placeholder="Leave a project name here"></textarea>
                   </div>
 
                   
@@ -224,8 +90,7 @@
                   <br>      
 
             <div class="addonDescription-form">
-              <textarea class="addonDescription-control" id="floatingTextarea4" placeholder="Leave a description here">
-            </textarea>
+              <textarea class="addonDescription-control" id="floatingTextarea4" placeholder="Leave a description here"></textarea>
             </div>
 
                 <hr>
@@ -253,28 +118,6 @@
     <!-----Add On Description page----->
 
 
-    <!-- ---search bar---
-    <div class="searchbarpopup-wrapper hide">
-      <div class="searchbarpopup">
-
-        <div class="searchbarpop-content"></div>
-          <input type="text" id="searchbar" onkeyup="myFunction()" placeholder="Search for anything..." title="Type something">
-          <ul id="myUL">
-          <li><a href="#">a</a></li>
-          <li><a href="#">b</a></li>
-
-          <li><a href="#">c</a></li>
-          <li><a href="#">project</a></li>
-
-          <li><a href="#">d</a></li>
-          <li><a href="#">date</a></li>
-          <li><a href="#">task</a></li>
-        </ul>
-      </div>
-     </div> -->
-
-    <!-----search bar----->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
@@ -282,8 +125,8 @@
       integrity="sha256-6l5QOXZ6Mkg+2tOaJgs8yT7xx2WapaIPQl7qpB55/V0=" crossorigin="anonymous"></script>
   </main>
 
-  <script src="./popup.js"></script>
-  <script src="./Description.js"></script>
+  <!-- <script src="./popup.js"></script> -->
+  <!-- <script src="./Description.js"></script> -->
   <script src="./AddonDescription.js"></script>
   <script src="./searchbar.js"></script>
 </body>
