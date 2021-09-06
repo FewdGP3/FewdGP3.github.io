@@ -1,3 +1,20 @@
+.form-main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  bottom: 2vh;
+  position: absolute;
+  WIDTH: 80VW;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 
 
 input {
@@ -5,18 +22,21 @@ input {
   height: 30px;
 }
 
-.add {
-  margin-top: 20px;
-  background-color: #000;
-  color: #fff;
-  border: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 15px;
+.list {
+  padding-top: 390px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.list {
-  padding-top: 20px;
+.item-main{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .item {
@@ -36,7 +56,57 @@ input {
   padding: 10px;
 }
 
+#addItem-Btn{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
 
+.Confirm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  background-color: #f7e087;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 90vw;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 27px;
+}
+
+.Confirm span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Confirm span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.Confirm:hover span {
+  padding-right: 25px;
+}
+
+.Confirm:hover span:after {
+  opacity: 0.8;
+  right: 0;
+}
 
 
 /*--Description page--*/
@@ -140,26 +210,23 @@ path {
     text-align: center;
     color: white;
     font-family: serif;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: bold;
     font-family: Alumni Sans;
   }
 
 /*--mediaNav--*/
-.mediaNav {
-    width: 80vw;
+/* .mediaNav {
     display: flex;
     flex-direction: column;
     color: rgb(138 163 249);;
     text-decoration: none;
     line-height: 1;
     margin: 0;
-    margin: 25px;
-}
+ 
+} */
 
 /*--addTask button--*/
-
-
 
 .assigned-to {
     width: 200px;
@@ -169,46 +236,21 @@ path {
     align-items: flex-end;
 }
 
-.mediaDate{
-    font-size: 25px;
-    color: rgb(68, 68, 68);
-    margin-left: 35px;
-}
-
 /* #mediadate{
-   
+    font-size: 25px;
+    color: #9fa3a4;
+    /* margin-left: 35px; 
 } */
 
 /*--mediaContent--*/
-
 
 .arrow-left-deescription a{
     color:#5e5e5e!important;
 }
 
-
-
-
 .ASSIGNED-TO{
   width: 70vw;
 }
-
-
-
-
-.Confirm{
-background-color: rgb(8, 85, 230);;
-color: white;
-width: 90vw;
-}
-
-
-
-/*--Add On Description page--*/
-
-
-
-
 
 button{
     font-size: 24px;

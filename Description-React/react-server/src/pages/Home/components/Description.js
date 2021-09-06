@@ -16,14 +16,13 @@ const Description = () => {
 
     <div className="mediaNav">
       <div className="mediaToday"></div>
-      <div idName="mediadate">
+      {/* <div id="mediadate">
         <h3>23 Aug 2021</h3>
-      </div>
+      </div> */}
       <div className="mediaList">
       </div>
     </div>
   </div>
-
 }
 
 export default Description
