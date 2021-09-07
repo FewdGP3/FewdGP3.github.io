@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./page/home/Home";
 import Todo from "./page/todo/Todo";
 import { Route } from "react-router-dom";
-import Project from "./page/project/Project";
+import Project from "./pages/Home/index";
 import Login from "./page/login/Login";
 import Signin from "./page/singin/Signin";
 function App() {
