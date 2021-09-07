@@ -1,1 +1,0 @@
-document.querySelector('#displayName').innerHTML = window.localStorage.getItem('displayName')
