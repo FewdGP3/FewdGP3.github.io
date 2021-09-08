@@ -1,40 +1,37 @@
-import React from "react";
-import styles from "./Todo.module.css";
-function Todo() {
+import React, { useState } from "react";
+import "./Todo.css";
+import Header from "../../components/todo/Header";
+import Form from "../../components/todo/Form";
+import TodosList from "../../components/todo/TodosList";
+const Todo = () => {
+  const [input, setInput] = useState("");
+  const [todos, setTodos] = useState([]);
+  const [editTodo, setEditTodo] = useState(null);
   return (
-    <div className={styles.userpage}>
-      <div className={styles.status}>
-        <div className={styles.dates}>
-          <div className={styles.date}>
-            <h1>17 JULY 2021</h1>
-          </div>
+    <div className="container">
+      <div className="appWrapper">
+        <div>
+          <Header />
         </div>
-        <div id="calendar"></div>
-
-        <hr />
-        <div className={styles.container}>
-          <form id="data-form">
-            <div className={styles.addTask}>
-              <input
-                type="text"
-                className={styles.textb}
-                id="enterAdd"
-                placeholder="Add New Task"
-              />
-              <button type="button">ADD</button>
-            </div>
-          </form>
-
-          <ol className={styles.notCompleted}>
-            <h3>Not Completed</h3>
-          </ol>
-
-          <ol className={styles.complete}>
-            <h3>Completed Tasks</h3>
-          </ol>
+        <div>
+          <Form
+            input={input}
+            setInput={setInput}
+            todos={todos}
+            setTodos={setTodos}
+            editTodo={editTodo}
+            setEditTodo={setEditTodo}
+          />
+        </div>
+        <div>
+          <TodosList
+            todos={todos}
+            setTodos={setTodos}
+            setEditTodo={setEditTodo}
+          />
         </div>
       </div>
     </div>
   );
-}
+};
 export default Todo;
