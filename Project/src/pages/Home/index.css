@@ -7,7 +7,7 @@
 }
 
 .form {
-  bottom: 2vh;
+  bottom: 31vh;
   position: absolute;
   width: 80vw;
   display: flex;
@@ -22,11 +22,15 @@ input {
 }
 
 .list {
-  padding-top: 390px;
+  padding-top: 225px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.list img{
+  width: 30px;
 }
 
 .item-main {
@@ -125,7 +129,7 @@ svg {
   position: absolute;
   width: 30px;
   height: 30px;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.6;
   margin-left: 15px;
   margin-top: 15px;
