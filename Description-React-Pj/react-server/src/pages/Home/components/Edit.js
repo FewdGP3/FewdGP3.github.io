@@ -42,7 +42,7 @@ const Edit = ({ add, submittingStatus }) => {
 
   return (
     <div>
-      {/* <form id="form" className="form-noshow"> */}
+      
         <div className="form-main">
           <div className="form">
             <p>PROJECT NAME</p>
@@ -64,7 +64,6 @@ const Edit = ({ add, submittingStatus }) => {
             </div>
           </div>
         </div>
-      {/* </form> */}
 
     </div>
   );
