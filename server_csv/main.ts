@@ -9,10 +9,18 @@ import { createUserRoute } from './routes/userRoutes';
 import { ProjectService } from './service/ProjectService';
 import { ProjectController } from './controller/ProjectController';
 import { createProjectRoute } from './routes/projectRoutes';
+import cors from 'cors'
 
 const app = express();
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
+
+const corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions))
+
 
 const service = new Service();
 const controller = new Controller(service);
@@ -28,8 +36,8 @@ const projectRoutes = createProjectRoute(projectController)
 
 app.use('/', express.static('./public'));
 app.use(routes);
-app.use('/user',userRoutes)
-app.use('/project',projectRoutes)
+app.use('/user', userRoutes)
+app.use('/project', projectRoutes)
 
 const PORT = 8080
 app.listen(PORT, () => {
