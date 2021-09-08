@@ -4,15 +4,16 @@ const List = ({ listData, deleteData, submittingStatus }) => {
   return (
     <div className="list">
       {listData.map((item) => {
-        const { note, descrip, date, img, id } = item;
+        const { id, name,description , assignTo, date } = item;
+        console.log(item);
         return (
           <Item
             key={id}
             id={id}
-            note={note}
-            descrip={descrip}
+            note={name}
+            descrip={description}
             date={date}
-            img={img}
+            img={assignTo}
             deleteData={deleteData}
             submittingStatus={submittingStatus}
           />

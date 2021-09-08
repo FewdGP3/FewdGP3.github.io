@@ -8,8 +8,9 @@ import "./index.css";
 
 async function fetchData(setData) {
   const res = await fetch(API_GET_DATA);
-  const { data } = await res.json();
+  const  data  = await res.json();
   setData(data);
+  console.log(data)
 }
 
 async function fetchSetData(data) {
