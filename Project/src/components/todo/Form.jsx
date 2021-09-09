@@ -32,7 +32,7 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
     const id = data.id;
     return id;
   }
-  async function edit() {
+  async function edit(id) {
     const res = await fetch(`http://localhost:8080/todolist${id}`, {
       method: "PUT",
     });
@@ -49,6 +49,7 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
       setTodos([...todos, { id: id, title: input, completed: false }]);
       setInput("");
     } else {
+      edit(editTodo.id);
       updateTodo(input, editTodo.id, editTodo.completed);
     }
   };
