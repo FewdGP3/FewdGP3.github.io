@@ -1,4 +1,11 @@
 import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(faCheckCircle, faTrashAlt, faEdit);
 
 const TodosList = ({ todos, setTodos, setEditTodo }) => {
   const handleComplete = (todo) => {
@@ -29,25 +36,26 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
             className={`todoList ${todo.completed ? "complete" : ""}`}
             onChange={(event) => event.preventDefault()}
           />
-          <div>
-            <button
+          <div className="iconButton">
+            <FontAwesomeIcon
+              icon="check-circle"
               className="buttonComplete taskButton"
               onClick={() => handleComplete(todo)}
-            >
-              OK
-            </button>
-            <button
+            />
+          </div>
+          <div className="iconButton">
+            <FontAwesomeIcon
+              icon="edit"
               className="buttonEdit taskButton"
               onClick={() => handleEdit(todo)}
-            >
-              Edit
-            </button>
-            <button
+            />
+          </div>
+          <div className="iconButton">
+            <FontAwesomeIcon
+              icon="trash-alt"
               className="buttonDelete taskButton"
               onClick={() => handleDelete(todo)}
-            >
-              Del
-            </button>
+            />
           </div>
         </li>
       ))}
