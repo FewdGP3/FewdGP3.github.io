@@ -19,10 +19,34 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
   const onInputChange = (event) => {
     setInput(event.target.value);
   };
+
+  async function post(newItem) {
+    const res = await fetch("http://localhost:8080/todolist", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(newItem),
+    });
+    const data = await res.json();
+    const id = data.id;
+    return id;
+  }
+  async function edit() {
+    const res = await fetch(`http://localhost:8080/todolist${id}`, {
+      method: "PUT",
+    });
+  }
+
   const onFormSubmit = (event) => {
     event.preventDefault();
     if (!editTodo) {
-      setTodos([...todos, { id: uuidV4(), title: input, completed: false }]);
+      const id = post({
+        name: input,
+        date: "",
+        completed: "no",
+      });
+      setTodos([...todos, { id: id, title: input, completed: false }]);
       setInput("");
     } else {
       updateTodo(input, editTodo.id, editTodo.completed);

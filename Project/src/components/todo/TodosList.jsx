@@ -22,7 +22,14 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
     const findTodo = todos.find((todo) => todo.id === id);
     setEditTodo(findTodo);
   };
+  async function taskDelete(id) {
+    const res = await fetch(`http://localhost:8080/todolist/${id}`, {
+      method: "DELETE",
+    });
+  }
+
   const handleDelete = ({ id }) => {
+    taskDelete(id);
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
