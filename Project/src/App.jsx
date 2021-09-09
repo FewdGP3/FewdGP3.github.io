@@ -5,11 +5,14 @@ import { Route } from "react-router-dom";
 import Project from "./pages/Home/index";
 import Login from "./page/login/Login";
 import Signin from "./page/singin/Signin";
+import { useState } from "react";
+
 function App() {
+  const [user, setUser] = useState()
   return (
     <div>
       <Route path="/" exact>
-        <Home />
+        <Home user={user}/>
       </Route>
       <Route path="/Todo">
         <Todo />
@@ -18,7 +21,7 @@ function App() {
         <Project />
       </Route>
       <Route path="/Login">
-        <Login />
+        <Login setUser={setUser}/>
       </Route>
       <Route path="/Signin">
         <Signin />
