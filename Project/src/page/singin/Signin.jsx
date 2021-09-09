@@ -1,7 +1,10 @@
 import React from "react";
 import "./Signin.css";
+import { useState } from 'react';
 
 function Signin() {
+  console.log(useState('ben'))
+
   return (
     <div className="loginbg">
       <div className="login">
@@ -19,7 +22,7 @@ function Signin() {
         </div>
 
         <div className="signbt">
-          <input id="enterAdd" type="submit" value="Sign Up" />
+          <input id="enterAdd" type="submit" value="Sign Up"/>
         </div>
       </div>
     </div>
