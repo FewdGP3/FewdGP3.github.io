@@ -32,7 +32,7 @@ input {
   font-family: Alumni Sans;
 }
 
-.list img{
+.list img {
   width: 30px;
 }
 
@@ -70,7 +70,6 @@ input {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  
 }
 
 .Confirm {
@@ -181,7 +180,7 @@ path {
 }
 
 @keyframes drift {
-  0 {
+  0% {
     transform: rotate(0deg);
   }
   100% {
